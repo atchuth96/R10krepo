@@ -21,7 +21,7 @@ for i in range(0,len(content)):
                 updated=True
 print(content)
 f = open("puppetfile.txt", "w")
-new_file_contents = "". join(content)
+new_file_contents = "\n".join(content)
 f.write(new_file_contents)
 f.close()
                 

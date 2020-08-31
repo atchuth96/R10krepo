@@ -10,8 +10,7 @@ contentline=open("puppetfile.txt","r")
 content=contentline.readlines()
 print(content)
 for i in range(0,len(content)):
-    if (i+2) < len(content):
-        print(content[i])
+    if (i+2) < len(content):        
         if appname in content[i]:
             matched=True
             if matched and not updated:
@@ -20,6 +19,7 @@ for i in range(0,len(content)):
                 print("Replacing "+content[k]+" with "+newcontent)
                 content[k]=newcontent
                 updated=True
+print(content)
 f = open("puppetfile.txt", "w")
 new_file_contents = "". join(content)
 f.write(new_file_contents)

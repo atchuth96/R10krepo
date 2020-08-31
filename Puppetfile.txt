@@ -1,20 +1,11 @@
 mod 'hieradata',
-
 :git => 'https://github.com/tr/DEP_ESI_HieraData_OSBSOA_New.git',
-
 :ref => '0.0.1'
 
-
-
 mod 'cda_osb',
-
 :git => 'https://github.com/tr/DEP_ESI_OSB_Puppetcode_New.git',
-
 :ref => '1.1.93'
 
-
 mod 'cda_osb1',
-
 :git => 'https://github.com/tr/DEP_ESI_OSB_Puppetcode_New.git',
-
 :ref => '1.1.91'

@@ -4,7 +4,7 @@ mod 'hieradata',
 
 mod 'cda_osb',
 :git => 'https://github.com/tr/DEP_ESI_OSB_Puppetcode_New.git',
-:ref => '1.1.93'
+:ref => '1.1.94'
 
 mod 'cda_osb1',
 :git => 'https://github.com/tr/DEP_ESI_OSB_Puppetcode_New.git',

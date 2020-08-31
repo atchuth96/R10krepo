@@ -15,7 +15,7 @@ for i in range(0,len(content)):
             matched=True
             if matched and not updated:
                 k=i+2
-                newcontent=":ref => '1.1."+buildNum+"'"
+                newcontent=":ref => '1.1."+buildNum+"'\n"
                 print("Replacing "+content[k]+" with "+newcontent)
                 content[k]=newcontent
                 updated=True

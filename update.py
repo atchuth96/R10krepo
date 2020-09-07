@@ -1,6 +1,7 @@
 import requests
 import base64
-import pygit
+import git
+from git import Repo
 
-r=pygit.repos()
+r=Repo()
 print(r)

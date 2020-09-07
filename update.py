@@ -5,4 +5,4 @@ from git import Repo
 
 r=Repo()
 print(r.tags)
-print(r)
+print(type(r.tags))

@@ -1,6 +1,7 @@
 import requests
 import base64
-from git import Git
+import git
+from git import Repo
 
-g = Git for-each-ref --sort=creatordate --format '%(refname)' refs/tags
-print(g)
+r=Repo()
+print(r)

@@ -6,4 +6,8 @@ from git import Repo
 r=Repo()
 tags=r.tags
 lasttag=tags[-1]
-print(lasttag)
+tag='1.1.3'
+new_tag = repo.create_tag(tag, message='Automatic tag "{0}"'.format(tag)) 
+repo.remotes.origin.push(new_tag)
+
+

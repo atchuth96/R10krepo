@@ -4,5 +4,6 @@ import git
 from git import Repo
 
 r=Repo()
-print(r.tags)
-print(type(r.tags))
+tags=r.tags
+lasttag=tags[-1]
+print(lasttag)

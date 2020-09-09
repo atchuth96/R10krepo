@@ -10,6 +10,7 @@ tags=tagsstr.splitlines()
 lasttag=tags[-1]
 print(lasttag)
 lasttag=lasttag.replace('refs/tags/','')
+lasttag=lasttag.replace("'",'')
 print(lasttag)
 lastdig=lasttag.split('.')[-1]
 print(lastdig)

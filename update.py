@@ -9,11 +9,12 @@ tags = stream.read()
 lasttag=tags[-1]
 lasttag=lasttag.replace('refs/tags/','')
 print(lasttag)
-lastdig=lasttag.split('.')[-1]
+print(type(lasttag))
+"""lastdig=lasttag.split('.')[-1]
 print(lastdig)
 lastdig=int(lastdig)
 lastdig=lastdig+1
-lastdig=str(lastdig)
+lastdig=str(lastdig)"""
 
 command="git tag 1.1."+lastdig
 os.popen(command)

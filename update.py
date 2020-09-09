@@ -18,7 +18,7 @@ lastdig=int(lastdig)
 lastdig=lastdig+1
 lastdig=str(lastdig)
 
-command="git tag 1.1."+lastdig
+command="git tag "+"'1.1."+lastdig+"'"
 os.popen(command)
 command1="git push origin master --tags --force"
 os.popen(command1)

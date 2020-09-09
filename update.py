@@ -4,7 +4,7 @@ import os
 import subprocess
 
 
-stream = os.popen('git for-each-ref --sort=creatordate --format '%(refname)' refs/tags')
+stream = os.popen("git for-each-ref --sort=creatordate --format '%(refname)' refs/tags")
 output = stream.read()
 print(output)
 """repo=Repo()

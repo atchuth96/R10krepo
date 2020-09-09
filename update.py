@@ -7,6 +7,7 @@ import subprocess
 stream = os.popen("git for-each-ref --sort=creatordate --format '%(refname)' refs/tags")
 tags = stream.read()
 print(tags)
+print(type(tags))
 lasttag=tags[-1]
 lasttag=lasttag.replace('refs/tags/','')
 print(lasttag)

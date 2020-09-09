@@ -5,8 +5,21 @@ import subprocess
 
 
 stream = os.popen("git for-each-ref --sort=creatordate --format '%(refname)' refs/tags")
-output = stream.read()
-print(output)
+tags = stream.read()
+lasttag=tags[-1]
+lastdig=lasttag.split('.')[-1]
+lastdig=int(lastdig)
+lastdig=lastdig+1
+lastdig=str(lastdig)
+
+command="git tag 1.1."+lastdig
+os.popen(command)
+command1="git push origin master --tags --force"
+os.popen(command1)
+    
+   
+
+
 """repo=Repo()
 tags=repo.tags
 lasttag=tags[-1]

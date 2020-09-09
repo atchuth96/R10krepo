@@ -7,16 +7,12 @@ import subprocess
 stream = os.popen("git for-each-ref --sort=creatordate --format '%(refname)' refs/tags")
 tagsstr = stream.read()
 tags=tagsstr.splitlines()
-print(type(tags))
 lasttag=tags[-1]
 lasttag=lasttag.replace('refs/tags/','')
-print(lasttag)
-print(type(lasttag))
-"""lastdig=lasttag.split('.')[-1]
-print(lastdig)
+lastdig=lasttag.split('.')[-1]
 lastdig=int(lastdig)
 lastdig=lastdig+1
-lastdig=str(lastdig)"""
+lastdig=str(lastdig)
 
 command="git tag 1.1."+lastdig
 os.popen(command)

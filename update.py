@@ -8,7 +8,9 @@ stream = os.popen("git for-each-ref --sort=creatordate --format '%(refname)' ref
 tags = stream.read()
 lasttag=tags[-1]
 lasttag=lasttag.replace('refs/tags/','')
+print(lasttag)
 lastdig=lasttag.split('.')[-1]
+print(lastdig)
 lastdig=int(lastdig)
 lastdig=lastdig+1
 lastdig=str(lastdig)
